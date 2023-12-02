@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://bootswatch.com/5/darkly/bootstrap.min.css">
+    <title>Book Collection</title>
+</head>
+<body>
+    
+    <div class="container mt-4">
+        <h1 class="display-4 text-center">My <span class="text-primary">Book</span> Collection</h1>
+
+        <form id="libro-form">
+            <div class="form-group">
+                <label for="titulo">Book Title</label>
+                <input type="text" id="titulo" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="autor">Author</label>
+                <input type="text" id="autor" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="isbn">#ISBN (Numbers Only)</label>
+                <input type="number" id="isbn" class="form-control">
+            </div>
+            
+            <button type="submit" style="margin-top: 10px;" class="btn btn-primary w-100 btn-lg">Add book to the collection</button>
+        </form>
+
+        <table class=" table table-striped mt-5">
+            <thead class="table-dark">
+                <tr>
+                    <th>Book Title</th>
+                    <th>Author</th>
+                    <th>ISBN</th>
+                    <th></th>
+                </tr>
+            </thead>
+
+            <tbody id="libro-list" class="table-primary">
+
+            </tbody>
+
+        </table>
+
+        <footer id="footer" style="margin: 5em 0;">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Made by <a href="https://www.linkedin.com/in/bruno-espina-b3676b291/">Bruno Espina</a></p>
+                    <p>Contact:  <a href="mailto: brunoespina00@gmail.com">brunoespina00@gmail.com</a> </p>
+                    <ul class="list-unstyled">
+                        <li><a href="https://github.com/BrunoEspina1">GitHub</a></li>
+                        <li><a href="https://brunoespina1.github.io/BrunoEspina/">My portfolio</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
